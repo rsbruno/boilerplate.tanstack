@@ -1,7 +1,7 @@
 import { type ComponentPropsWithoutRef, type ElementRef, forwardRef } from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
+import { User } from "@phosphor-icons/react";
 import { twMerge } from "tailwind-merge";
-import { CiUser } from "react-icons/ci";
 
 interface AvatarFallbackProps extends ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback> {}
 
@@ -14,7 +14,7 @@ const AvatarFallback = forwardRef<ElementRef<typeof AvatarPrimitive.Fallback>, A
         ref={ref}
         {...props}
       >
-        <CiUser className="text-white" size={20} />
+        <User className="text-white" weight="bold" size={20} />
       </AvatarPrimitive.Fallback>
     );
   }

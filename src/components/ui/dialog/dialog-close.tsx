@@ -1,6 +1,6 @@
 import { type ComponentPropsWithoutRef, type ComponentRef, forwardRef } from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { PiX } from "react-icons/pi";
+import { X } from "@phosphor-icons/react";
 
 import { useDialogContext } from "./context";
 
@@ -18,7 +18,7 @@ const DialogClose = forwardRef<ComponentRef<typeof DialogPrimitive.Close>, Dialo
         ref={ref}
         {...props}
       >
-        {children ?? <PiX className="size-5" />}
+        {children ?? <X className="size-5" weight="bold" />}
       </DialogPrimitive.Close>
     );
   }

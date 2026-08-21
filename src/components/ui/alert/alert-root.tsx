@@ -1,4 +1,4 @@
-import { PiWarningCircleBold, PiCheckCircleBold, PiXCircleBold, PiInfoBold } from "react-icons/pi";
+import { WarningCircle, CheckCircle, XCircle, Info } from "@phosphor-icons/react";
 import { type ComponentProps, useMemo } from "react";
 import { Slot } from "@radix-ui/react-slot";
 
@@ -10,11 +10,11 @@ interface AlertRootProps extends ComponentProps<"div"> {
   asChild?: boolean;
 }
 
-const icons: Record<AlertVariant, typeof PiInfoBold> = {
-  warning: PiWarningCircleBold,
-  success: PiCheckCircleBold,
-  danger: PiXCircleBold,
-  info: PiInfoBold
+const icons: Record<AlertVariant, typeof Info> = {
+  warning: WarningCircle,
+  success: CheckCircle,
+  danger: XCircle,
+  info: Info
 };
 
 function AlertRoot({ variant = "info", className, children, asChild, ref, ...props }: AlertRootProps) {
@@ -28,7 +28,7 @@ function AlertRoot({ variant = "info", className, children, asChild, ref, ...pro
     <AlertContext.Provider value={contextValue}>
       <Comp className={slots.root({ className })} data-slot="alert" role="alert" ref={ref} {...props}>
         <span className={slots.iconWrapper()}>
-          <Icon className={slots.icon()} />
+          <Icon className={slots.icon()} weight="bold" />
         </span>
         <div className={slots.content()}>{children}</div>
       </Comp>
