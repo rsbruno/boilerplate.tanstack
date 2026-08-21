@@ -1,6 +1,6 @@
 import type { ComponentPropsWithoutRef } from "react";
 
-import { PiCaretRightBold } from "react-icons/pi";
+import { CaretRight } from "@phosphor-icons/react";
 import { twMerge } from "tailwind-merge";
 
 interface BreadcrumbSeparatorProps extends ComponentPropsWithoutRef<"li"> {}
@@ -14,7 +14,7 @@ function BreadcrumbSeparator({ className, children, ...props }: BreadcrumbSepara
       aria-hidden="true"
       {...props}
     >
-      {children ?? <PiCaretRightBold />}
+      {children ?? <CaretRight weight="bold" />}
     </li>
   );
 }

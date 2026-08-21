@@ -1,6 +1,6 @@
 import type { ComponentPropsWithoutRef } from "react";
 
-import { PiDotsThreeBold } from "react-icons/pi";
+import { DotsThree } from "@phosphor-icons/react";
 import { twMerge } from "tailwind-merge";
 
 import { Typography } from "@/components/ui/typography";
@@ -16,7 +16,7 @@ function BreadcrumbEllipsis({ className, ...props }: BreadcrumbEllipsisProps) {
       aria-hidden="true"
       {...props}
     >
-      <PiDotsThreeBold className="size-4" />
+      <DotsThree className="size-4" weight="bold" />
 
       <Typography className="sr-only" size="md" as="span">
         Mais

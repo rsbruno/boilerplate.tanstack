@@ -1,6 +1,6 @@
 import type { ComponentProps } from "react";
 
-import { PiEyeSlashBold, PiEyeBold } from "react-icons/pi";
+import { EyeSlash, Eye } from "@phosphor-icons/react";
 import { useState } from "react";
 
 import type { FieldContainerVariantProps } from "@/components/ui/inputs/field-container";
@@ -34,7 +34,7 @@ function PasswordField({ className, label, error, size, name, ref, ...props }: P
           tabIndex={-1}
           type="button"
         >
-          {visible ? <PiEyeSlashBold size={18} /> : <PiEyeBold size={18} />}
+          {visible ? <EyeSlash weight="bold" size={18} /> : <Eye weight="bold" size={18} />}
         </button>
       </div>
     </FieldContainer>
