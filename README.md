@@ -16,6 +16,10 @@ TanStack Start · React 19 · TypeScript · Tailwind CSS v4
 
 ---
 
+## Sobre
+
+Template genérico de frontend, sem lógica de negócio nem domínio específico. Serve de ponto de partida pra qualquer app full-stack em React — só clonar, renomear e começar a construir.
+
 ## Stack
 
 | Camada              | Escolha                                                   | Por quê                                                     |
@@ -45,3 +49,12 @@ pnpm dev
 - `src/components/controlled` — campos plugados no `react-hook-form`
 - `src/utils` — helpers genéricos
 - `src/styles/global.css` — tailwind entrypoint + design tokens
+
+## Usando como template
+
+1. Clone ou use "Use this template" no GitHub.
+2. Renomeie `name` em `package.json`.
+3. Apague/adapte rotas de exemplo em `src/pages` pro seu domínio.
+4. Ajuste design tokens em `src/styles/global.css`.
+
+Contribuições, issues e forks são bem-vindos.
