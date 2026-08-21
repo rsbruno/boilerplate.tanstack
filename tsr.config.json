@@ -1,0 +1,8 @@
+{
+  "target": "react",
+  "routesDirectory": "./src/pages",
+  "generatedRouteTree": "./src/routes/index.ts",
+  "routeFileIgnorePattern": "_components|_utils|_schemas|_layout",
+  "routeFileIgnorePrefix": "-",
+  "quoteStyle": "double"
+}
